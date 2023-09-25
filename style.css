@@ -67,9 +67,13 @@
     width: 140px;
     height: 60px;
     display: flex;
-    justify-content: center;
+    justify-content:left ;
     align-items: center;
     font-size: 30px;
+}
+
+.zero {
+    margin-left: 25px;
 }
 
 .b1f1, .b1f2, .b1f3 {
