@@ -27,7 +27,6 @@ function divide(a, b)
 
 function operate(a, type, b)
 {
-
     let result = type(a, b);
     return result;
 }
