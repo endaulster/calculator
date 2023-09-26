@@ -95,3 +95,8 @@
     background-color: rgb(79, 79, 79);
     color: white;
 }
+
+.cambio {
+    transition: all 0.05s;
+    color: black;
+}

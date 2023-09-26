@@ -115,6 +115,7 @@ AllOper.forEach( aOper => aOper.onclick =
             first = display.textContent;
             operOn = true;
             displayRefreshed = true;
+            blinker(display);
         } 
     }
 );
@@ -146,5 +147,15 @@ Refresher.forEach( aR => aR.onclick =
         displayRefreshed = true;
         first, second = false;
         refreshDisplay(0);
+        blinker(display);
     }
 );
+
+function blinker(z){
+    z.classList.add("cambio");
+    function removetrans(){
+        this.classList.remove("cambio");
+    }
+    z.addEventListener("transitionend", removetrans);
+}
+
