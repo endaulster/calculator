@@ -149,3 +149,8 @@ body {
     background-color: white;
     color: orange;
 }
+
+.glowS {
+    transition: all 0.4s;
+    background-color: rgb(231, 231, 231);
+}

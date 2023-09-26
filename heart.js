@@ -151,6 +151,7 @@ Refresher.forEach( aR => aR.onclick =
         first, second = false;
         refreshDisplay(0);
         blinker(display);
+        glowS(aR);
     }
 );
 
@@ -174,6 +175,14 @@ function glowOper(z){
     z.classList.add("glowO");
     function removetrans(){
         this.classList.remove("glowO");
+    }
+    z.addEventListener("transitionend", removetrans);
+}
+
+function glowS(z){
+    z.classList.add("glowS");
+    function removetrans(){
+        this.classList.remove("glowS");
     }
     z.addEventListener("transitionend", removetrans);
 }
