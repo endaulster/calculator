@@ -148,8 +148,3 @@ Refresher.forEach( aR => aR.onclick =
         refreshDisplay(0);
     }
 );
-
-//AllNumbers.style.cursor = "pointer";
-//AllNumbers.onclick = function() {
-//    alert("great success");
-//};
