@@ -127,6 +127,7 @@ let opera = Array.from(document.querySelectorAll(".igualador"));
 opera.forEach( aIgual => aIgual.onclick = 
     function()
     {
+        glowOper(aIgual);
         if(operOn == true)
        {
             refreshDisplay(display.textContent);
