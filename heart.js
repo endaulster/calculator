@@ -65,6 +65,7 @@ let displayRefreshed = true;
 AllNumbers.forEach( aNumber => aNumber.onclick = 
     function()
     {
+    glowNumber(aNumber);
     if (operOn == false)
     {
         if (displayRefreshed == true)
@@ -106,6 +107,7 @@ let first, second = false;
 AllOper.forEach( aOper => aOper.onclick = 
     function()
     {
+        glowOper(aOper);
         if (displayRefreshed == true)
         {
 
@@ -125,7 +127,7 @@ let opera = Array.from(document.querySelectorAll(".igualador"));
 opera.forEach( aIgual => aIgual.onclick = 
     function()
     {
-       if(operOn == true)
+        if(operOn == true)
        {
             refreshDisplay(display.textContent);
             second = display.textContent;
@@ -159,3 +161,18 @@ function blinker(z){
     z.addEventListener("transitionend", removetrans);
 }
 
+function glowNumber(z){
+    z.classList.add("glowN");
+    function removetrans(){
+        this.classList.remove("glowN");
+    }
+    z.addEventListener("transitionend", removetrans);
+}
+
+function glowOper(z){
+    z.classList.add("glowO");
+    function removetrans(){
+        this.classList.remove("glowO");
+    }
+    z.addEventListener("transitionend", removetrans);
+}

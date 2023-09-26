@@ -138,3 +138,14 @@ body {
     transform: rotate(360deg) scale(1.1);
     
 }
+
+.glowN {
+    transition: all 0.4s;
+    background-color: rgb(145, 145, 145);
+}
+
+.glowO {
+    transition: all 0.4s;
+    background-color: white;
+    color: orange;
+}
