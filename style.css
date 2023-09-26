@@ -3,12 +3,18 @@
     font-weight: lighter ;
 }
 
+.body {
+    margin: 0px;
+}
+
 .container {
     display:flex;
     flex-direction: column;
     justify-content: space-between;
     height: 100vh;
     align-items: center;
+    background: rgb(255,255,255);
+    background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(152,152,152,1) 100%);
 }
 
 .calculator {
@@ -21,8 +27,11 @@
     padding: 1em;
     border-radius: 50px;
     border: solid;
-    border-width: 3px;
-    border-color: grey;
+    border-width: 4px;
+    border-color: rgb(135, 124, 124);
+    box-shadow: -7px 8px 6px 3px rgba(0,0,0,0.55);
+    -webkit-box-shadow: -7px 8px 6px 3px rgba(0,0,0,0.55);
+    -moz-box-shadow: -7px 8px 6px 3px rgba(0,0,0,0.55);
 }
 
 .display{
@@ -99,4 +108,33 @@
 .cambio {
     transition: all 0.05s;
     color: black;
+}
+
+.header {
+    padding-top:10px;
+}
+
+body {
+    margin: 0;
+  }
+
+.footerbox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 13px;
+    padding: 10px;
+    font-family: Helvetica;
+    font-weight: bold;
+    transition: all 0.5s;
+    max-height: 45px;
+}
+
+.gitlogo{
+    transition: all 0.35s;
+}
+
+.gitlogo:hover{
+    transform: rotate(360deg) scale(1.1);
+    
 }
