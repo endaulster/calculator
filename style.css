@@ -81,12 +81,17 @@
     background-color: rgb(169, 169, 169);
 }
 
-.b1f4, .b2f4, .b3f4, .b4f4, .b5f3 {
+.operador {
     background-color: orange;
     color: white;
 }
 
-.b2f1, .b2f2, .b2f3, .b3f1, .b3f2, .b3f3, .b4f1, .b4f2, .b4f3, .b5f1, .b5f2 {
+.igualador {
+    background-color: orange;
+    color: white;
+}
+
+.numero {
     background-color: rgb(79, 79, 79);
     color: white;
 }
