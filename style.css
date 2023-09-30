@@ -42,6 +42,8 @@
     text-align: right;
     padding-top: 100px;
     padding-right: 49px;
+    text-overflow: ellipsis;
+    overflow: hidden;
 }
 
 .buttons {
