@@ -50,6 +50,7 @@ function operate(a, type, b)
 }
 
 const display = document.querySelector(".display");
+const borra = document.querySelector(".b1f1");
 
 function refreshDisplay(z)
 {
@@ -116,6 +117,7 @@ AllOper.forEach( aOper => aOper.onclick =
             operSelection = aOper.textContent;
             first = display.textContent;
             operOn = true;
+            borra.innerHTML = "C";
             displayRefreshed = true;
             blinker(display);
         } else if (displayRefreshed == false && operOn == true)
@@ -159,8 +161,22 @@ Refresher.forEach( aR => aR.onclick =
         displayRefreshed = true;
         first, second = false;
         refreshDisplay(0);
+        borra.innerHTML = "AC";
         blinker(display);
         glowS(aR);
+    }
+);
+
+let signswitch = Array.from(document.querySelectorAll(".b1f2"));
+
+signswitch.forEach( sS => sS.onclick = 
+    function()
+    {
+        let n = display.innerHTML;
+        n = n*-1;
+        refreshDisplay(n);
+        blinker(display);
+        glowS(sS);
     }
 );
 
