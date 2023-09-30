@@ -110,7 +110,7 @@ AllOper.forEach( aOper => aOper.onclick =
         glowOper(aOper);
         if (displayRefreshed == true)
         {
-
+            
         } else if (displayRefreshed == false && operOn == false)
         {
             operSelection = aOper.textContent;
@@ -118,6 +118,15 @@ AllOper.forEach( aOper => aOper.onclick =
             operOn = true;
             displayRefreshed = true;
             blinker(display);
+        } else if (displayRefreshed == false && operOn == true)
+        {
+            second = display.textContent;
+            let result = operate(first,operSelection,second);
+            refreshDisplay(result);
+            first = result;
+            operSelection = aOper.textContent;
+            blinker(display);
+            displayRefreshed = true;
         } 
     }
 );
