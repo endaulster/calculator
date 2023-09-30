@@ -60,6 +60,7 @@ function refreshDisplay(z)
 //let num = Array.from(document.querySelectorAll(".numero"));
 
 let AllNumbers = Array.from(document.querySelectorAll(".numero"));
+let cero = Array.from(document.querySelectorAll(".numero0"));
 
 let displayRefreshed = true;
 
